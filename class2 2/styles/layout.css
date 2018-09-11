@@ -22,10 +22,20 @@ main {
     background-color: white;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    background-color: white;
+    margin-bottom: 0px;
 }
 
 body {
     margin-left: 14%;
     margin-right: 14%;
     margin-top: 20px;
+}
+
+img {
+    margin-left: 17%;
 }
