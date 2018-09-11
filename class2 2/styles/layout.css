@@ -1,0 +1,31 @@
+/* Semicolons are supposed to close a line for a CSS parameter,
+not separate the HTML elements
+Compare to typography.css 
+To visualize it better it helps to break them up,
+line by line.
+*/
+
+html {
+    background-color: #e0ffb7;
+}
+
+header {
+    background-color: white;
+}
+
+/* Since we started with the 1st genereation of body,
+i.e. header and main, we should continue on the same level,
+meaning use main instead of an article 
+*/
+/* article { */
+main {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body {
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 20px;
+}

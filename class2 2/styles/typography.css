@@ -1,0 +1,32 @@
+/* header styles */
+header {
+    font-family: 'Century Gothic Pro';
+}
+
+h1 {
+    color: #663322; /* can also be written as color: rgb(##, ##, ##); */
+    font-family: 'Pacifico';
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Century Gothic Pro';
+}
+
+/* list styles */
+ul {
+    list-style-type: none;
+    padding-left: 0px;   
+}
+
+li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+
+/* anchors and links */
+a {
+    font-size: 20px;
+}
