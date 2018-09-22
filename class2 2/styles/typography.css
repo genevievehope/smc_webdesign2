@@ -11,6 +11,9 @@ h1 {
 
 p {
     font-family: 'Century Gothic Pro';
+    position: absolute;
+    background-color: yellow;
+    margin-left: 20px;
 }
 
 /* list styles */

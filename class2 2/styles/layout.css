@@ -7,7 +7,7 @@ line by line.
 
 html {
     background-color: #e0ffb7;
-}
+} 
 
 header {
     background-color: white;
@@ -23,6 +23,7 @@ main {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    height: 1000px;
 }
 
 h1 {
@@ -40,3 +41,54 @@ body {
     margin: 0 auto;
 }
 
+.bluebox {
+    background-color: blue;
+    margin-top: 20px;
+    height: 200px;
+    width: 770px;
+    position: fixed;
+}
+
+.redbox {
+    background-color: red;
+    margin-top: 240px;
+    height: 200px;
+    width: 450px;
+    position: fixed;
+}
+
+.turbox {
+    background-color: #31c2ee;
+    margin-top: 240px;
+    margin-left: 470px;
+    height: 200px;
+    width: 300px;
+    position: fixed;
+}
+
+.yelbox {
+    background-color: yellow;
+    margin-top: 20px;
+    margin-left: 790px;
+    height: 420px;
+    width: 205px;
+    position: fixed;
+}
+
+.redthing {
+    background-color: red;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 300px;
+    width: 50px;
+    position: relative;
+}
+
+.turthing {
+    background-color: #31c2ee;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 60px;
+    width: 165px;
+    position: relative;
+}
