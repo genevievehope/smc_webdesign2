@@ -16,6 +16,12 @@ p {
     margin-left: 20px;
 }
 
+p::first-letter { 
+    font-size: 200%;
+    font-family: 'Pacifico';
+    color: #8A2BE2;
+}
+
 /* list styles */
 ul {
     list-style-type: none;
