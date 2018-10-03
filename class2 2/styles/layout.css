@@ -92,12 +92,3 @@ body {
     width: 165px;
     position: relative;
 }
-
-
-
-@media only screen and (max-width: 768px) {
-    main {
-        column-count: 2;
-        font-family: 'Indie Flower';font-size: 22px;
-    }
-}

@@ -10,7 +10,7 @@ h1 {
 }
 
 p {
-    font-family: 'Century Gothic Pro';
+    font-family: 'Century Gothic Pro', Times, serif;
     position: absolute;
     background-color: yellow;
     margin-left: 20px;
