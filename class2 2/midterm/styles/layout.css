@@ -15,4 +15,9 @@ img {
         display: block;
         margin-bottom: 5px;
     }
+
+    img {
+        width: 100%;
+        margin: auto;
+    }
 }
