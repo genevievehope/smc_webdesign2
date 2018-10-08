@@ -15,6 +15,11 @@ h2 {
     margin-top: 3px;
 }
 
+h3 {
+    font-family: 'Zilla Slab', 'Georgia', Times, sans-serif;
+    size: 20px;
+}
+
 p {
     font-family: 'Montserrat', 'Century Gothic Pro', sans-serif;
 }
@@ -35,6 +40,7 @@ li {
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
    
 a:link {        /* a normal, unvisited link */

@@ -6,6 +6,10 @@ main {
     background-color: #d8e1ef;
 }
 
+img {
+    margin: auto;
+}
+
 @media only screen and (max-width: 768px) {
     li {
         display: block;
