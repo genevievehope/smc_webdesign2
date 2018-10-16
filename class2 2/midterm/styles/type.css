@@ -1,7 +1,7 @@
 /* headers */
 
 h1 {
-    font-family: 'Zilla Slab', 'Georgia', Times, serif;
+    font-family: 'Oleo Script Swash Caps', 'Georgia', Times, serif;
     font-size: 35px;
     color: black;
     margin-top: 0px;
@@ -9,33 +9,23 @@ h1 {
 }
 
 h2 {
-    font-family: 'Zilla Slab', 'Georgia', Times, serif;
-    font-size: 25px;
-    color: red;
+    font-family: 'Josefin Sans', 'Montserrat', Times, serif;
+    font-size: 20px;
+    color: #0b4199;
     margin-top: 3px;
 }
 
-h3 {
-    font-family: 'Zilla Slab', 'Georgia', Times, sans-serif;
-    size: 20px;
-}
-
 p {
-    font-family: 'Montserrat', 'Century Gothic Pro', sans-serif;
+    font-family: 'Josefin Sans', 'Montserrat', 'Century Gothic Pro', sans-serif;
+    margin-top: 0;
 }
 
 /* list styles */
 ul {
     list-style-type: none;
     padding-left: 0px;  
-    font-family: 'Zilla Slab', 'Georgia', Times, sans-serif;
+    font-family: 'Josefin Sans', 'Montserrat', sans-serif;
     text-align: center;
-}
-
-li {
-    display: inline-block;
-    margin-right: 4%;
-    margin-left: 4%;
 }
 
 a {
