@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+
+    <div class="button container">
+        <button onclick="changeMyText()">Why did the bike fall over?</button>
+        <button onclick="changeMyColor()">Change Color</button>
+        <button onclick="changeMyTextAgain()">What is DNA short for?</button>
+        <button onclick="changeToGray()">Change to Grayscale</button>
+    </div>
+
+    <h1 id="docHeader">Prepare thyself for stupid one liners!</h1>
+    <h1 id="docHeader2"></h1>
+    <script>
+        var docHeader = document.getElementById("docHeader");
+
+        var changeMyText = function(){
+            var myText = "It was two tired.";
+            docHeader.innerHTML = myText;
+        }
+        
+        var changeMyColor = function(){
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255;
+
+            var RGBvalue = "rgb(" + red + "," + green + "," + blue + ")";
+            docHeader.style.color = RGBvalue;
+        }
+
+        var changeMyTextAgain = function(){
+            var myText = "National Dyslexic Association";
+            docHeader.innerHTML = myText;
+        }
+
+        var changeToGray = function(){
+            var gray = Math.random()*255;
+
+            var RGBvalue = "rgb(" + gray + "," + gray + "," + gray + ")";
+            docHeader.style.color = RGBvalue;
+        }
+
+        // var myText2 = "Hello, World!";
+        // var myTextSize = Math.random()*140 + 60;
+        // var docHeader = document.getElementById("docHeader");
+        // var docHeader2 = document.getElementById("docHeader2");
+        // var red = Math.random()*255
+        // var blue = Math.random()*175
+        // var color2 = "rgb(0," + red + "," + blue + ")";
+        // console.log(color2);
+        // console.log(docHeader);
+        // // easy commenting can be done by cmd+/
+
+        // docHeader.innerHTML = myText;
+        // docHeader.style.fontSize = myTextSize + "px";
+        // docHeader.style.color = "rgb(" + red + ",0," + blue + ")";
+
+        // docHeader2.innerHTML = "Goodbye, Sky!";
+        // docHeader2.style.fontSize = myTextSize + "px";
+        // docHeader2.style.color = color2;
+
+    </script>
+</body>
+</html>
