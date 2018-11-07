@@ -55,24 +55,24 @@
 
         function makeRed(){
             document.getElementById("warning").innerText="";
-            document.getElementById("purpleButton").removeattribute("disabled");
-            
-            if(text.style.color===rgb(255, 0, 0)){
+            document.getElementById("purpleButton").removeAttribute("disabled");
+            console.log(text.style.color);
+            if(text.style.color === "rgb(255, 0, 0)"){
                 document.getElementById("redButton").setAttribute("disabled", "disabled");
                 document.getElementById("warning").innerText = "it's already red.";
             }
-            text.style.color=rgb(255,0,0);
+            text.style.color = "rgb(255, 0, 0)";
         }
         
         function makePurple(){
             document.getElementById("warning").innerText="";
-            document.getElementById("redButton").removeattribute("disabled");
-            
-            if(text.style.color===rgb(200, 0, 200)){
+            document.getElementById("redButton").removeAttribute("disabled");
+            console.log(text.style.color);
+            if(text.style.color === "rgb(200, 0, 200)"){
                 document.getElementById("purpleButton").setAttribute("disabled", "disabled");
                 document.getElementById("warning").innerText = "it's already purple.";
             }
-            text.style.color=rgb(200,0,200);
+            text.style.color = "rgb(200, 0, 200)";
         }
     </script>
 
