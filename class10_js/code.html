@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- creating a toggle button -->
+    <h1 id="docHeader">Hello, World!</h1>
+    <div class="button-container">
+        <button onclick="showHeader()" id="showButton">Show Header!</button>
+        <button onclick="hideHeader()" id="hideButton">Hide Header!</button>
+    </div>
+
+    <p id="message"></p>
+    <p id="warning"></p>
+
+    <script>
+        var header = document.getElementById("docHeader");
+
+        function showHeader(){
+            document.getElementById("message").innerText="";
+            document.getElementById("hideButton").removeAttribute("disabled");
+
+            if(header.style.visibility==="visible"){
+                document.getElementById("showButton").setAttribute("disabled", "disabled");
+                document.getElementById("message").innerText="The header is already shown.";
+            }
+            header.style.visibility="visible";
+        }
+        function hideHeader(){
+            document.getElementById("message").innerText="";
+            document.getElementById("showButton").removeAttribute("disabled");
+
+            if(header.style.visibility==="hidden"){
+                document.getElementById("hideButton").setAttribute("disabled", "disabled");
+                document.getElementById("message").innerText = "yo, your header is already hidden. stop whipping a dead horse.";
+            }
+            header.style.visibility="hidden";
+        }
+    </script>
+    
+    <h1 id="round2">Trying this on my own with color change</h1>
+    <div class="button-container">
+        <button onclick="makeRed()" id="redButton">Make text red.</button>
+        <button onclick="makePurple()" id="purpleButton">Make text purple.</button>
+    </div>
+    
+    <script>
+        var text = document.getElementById("round2");
+
+        function makeRed(){
+            document.getElementById("warning").innerText="";
+            document.getElementById("purpleButton").removeattribute("disabled");
+            
+            if(text.style.color===rgb(255, 0, 0)){
+                document.getElementById("redButton").setAttribute("disabled", "disabled");
+                document.getElementById("message").innerText = "it's already red.";
+            }
+            text.style.color=rgb(255,0,0);
+        }
+        
+        function makePurple(){
+            document.getElementById("warning").innerText="";
+            document.getElementById("redButton").removeattribute("disabled");
+            
+            if(text.style.color===rgb(200, 0, 200)){
+                document.getElementById("purpleButton").setAttribute("disabled", "disabled");
+                document.getElementById("message").innerText = "it's already purple.";
+            }
+            text.style.color=rgb(200,0,200);
+        }
+    </script>
+
+</body>
+</html>
