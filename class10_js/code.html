@@ -59,7 +59,7 @@
             
             if(text.style.color===rgb(255, 0, 0)){
                 document.getElementById("redButton").setAttribute("disabled", "disabled");
-                document.getElementById("message").innerText = "it's already red.";
+                document.getElementById("warning").innerText = "it's already red.";
             }
             text.style.color=rgb(255,0,0);
         }
@@ -70,7 +70,7 @@
             
             if(text.style.color===rgb(200, 0, 200)){
                 document.getElementById("purpleButton").setAttribute("disabled", "disabled");
-                document.getElementById("message").innerText = "it's already purple.";
+                document.getElementById("warning").innerText = "it's already purple.";
             }
             text.style.color=rgb(200,0,200);
         }
