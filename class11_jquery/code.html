@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Class 11 Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="button container">
+        <button id="imgToggle">Hide Image</button>
+    </div>
+    <h1>These are quokkas :)</h1>
+    <img src="https://www.experienceperth.com/sites/ep/files/QuokkaRottnest2.jpg" alt="Quokka" class="page-img">
+
+    <script>
+        $(document).ready(function(){
+            // js version (much lengthier)
+            var imgQuokka = document.getElementsByClassName('page-img'[0])
+            imgQuokka.style.display = "none";
+
+            var buttonToggle = document.getElementById("imgToggle");
+            buttonToggle.innerText = 'Show image.'
+            
+            // jquery version (no vars needed)
+            $('.page-img').hide();
+            $('#imgToggle').text("Show the image.");
+
+            console.log($('imgToggle').text());
+        });
+    </script>
+
+</body>
+</html>

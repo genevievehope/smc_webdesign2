@@ -1,0 +1,44 @@
+<!DOCTYPE <DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>National Parks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="buttons">
+        <button id="remove">Remove Grand Tetons</button>
+    </div>
+    
+    <div class="images">
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/grand-teton-national-park.jpg" alt="grandTetons">
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/glacier-national-park-620x905.jpg" alt="glacier">
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2015/06/zion-national-park.jpg" alt="zion">
+
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2015/11/olympic-national-park.jpg" alt="olympic">
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2017/09/hawaii-volcanoes-national-park.jpg" alt="hawaii">
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2015/06/biscayne-national-park-620x905.jpg" alt="biscayne">
+
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2015/11/death-valley-national-park.jpg" alt="deathValley">
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2016/06/crater-lake-national-park.jpg" alt="craterLake">
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/yellowstone-national-park-620x905.jpg" alt="yellowstone">
+    </div>
+
+    <script>
+        //ACTIONS
+        var removeTetons = function(){
+            $('.images').remove("grandTetons");
+        }
+
+        //EVENTS
+        $('#remove').click(function(){
+            removeTetons();
+        });
+
+    </script>
+
+    </body>
+</html>
