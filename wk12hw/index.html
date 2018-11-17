@@ -6,15 +6,23 @@
     <title>National Parks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
 </head>
 <body>
     <div class="buttons">
-        <button id="remove">Remove Grand Tetons</button>
+        <button id="clear">Clear Page</button>
+        <button id="prepend">Prepend Message</button>
+        <button id="toggle">Toggle paragraph visibility!</button>
     </div>
+
+    <p>"Between every two pines is a doorway to a new world." - John Muir</p>
+
     
+
     <div class="images">
-        <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/grand-teton-national-park.jpg" alt="grandTetons">
+        <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/grand-teton-national-park.jpg" alt="grandTetons" class="heyo">
         <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/glacier-national-park-620x905.jpg" alt="glacier">
         <img src="https://www.national-park-posters.com/wp-content/uploads/2015/06/zion-national-park.jpg" alt="zion">
 
@@ -29,13 +37,27 @@
 
     <script>
         //ACTIONS
-        var removeTetons = function(){
-            $('.images').remove("grandTetons");
+        var clearPage = function(){
+            $("img").remove();
+            $("h1").remove();
+            $("p").remove();
+        }
+
+        var prependMessage = function(){
+            $('.images').prepend("<h1>The Beautiful National Parks of America</h1>");
         }
 
         //EVENTS
-        $('#remove').click(function(){
-            removeTetons();
+        $('#clear').click(function(){
+            clearPage();
+        });
+
+        $('#prepend').click(function(){
+            prependMessage();
+        });
+
+        $("#toggle").click(function(){
+            $("p").toggle();
         });
 
     </script>
