@@ -15,6 +15,8 @@
         <button id="clear">Clear Page</button>
         <button id="prepend">Prepend Message</button>
         <button id="toggle">Toggle paragraph visibility!</button>
+        <button id="addImage">Add an Image</button>
+        <button id="bringBack">Unclear</button>
     </div>
 
     <p>"Between every two pines is a doorway to a new world." - John Muir</p>
@@ -49,9 +51,17 @@
             $('.images').prepend("<h1>The Beautiful National Parks of America</h1>");
             count = count + 1;
             console.log(count);
-            if (count%2 === 1) {
-                print("heyoooo");
-            }
+            // if (count%2 === 1) {
+            //     print("heyoooo");
+            // }
+        }
+        
+        var bringEmBack = function(){
+            $('.images').appendTo('#body');
+        }
+
+        var addAnImage = function(){
+            $('.images').prepend("<img src='https://www.national-park-posters.com/wp-content/uploads/2014/11/acadia-national-park-1.jpg' alt='acadia'/>");
         }
 
         //EVENTS
@@ -65,6 +75,14 @@
 
         $("#toggle").click(function(){
             $("p").toggle();
+        });
+
+        $('#addImage').click(function(){
+            addAnImage();
+        });
+
+        $('#bringBack').click(function(){
+            bringEmBack();
         });
 
     </script>
