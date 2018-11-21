@@ -19,28 +19,38 @@
         <button id="bringBack">Unclear</button>
     </div>
 
-    <p>"Between every two pines is a doorway to a new world." - John Muir</p>
-
+    <div class = "p-container" >
+        <p>"Between every two pines is a doorway to a new world." - John Muir</p>
+    </div>
     
 
     <div class="images">
         <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/grand-teton-national-park.jpg" alt="grandTetons" class="heyo">
+        <button class="hideImg">Hide this Image</button>
         <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/glacier-national-park-620x905.jpg" alt="glacier">
+        <button class="hideImg">Hide this Image</button>
         <img src="https://www.national-park-posters.com/wp-content/uploads/2015/06/zion-national-park.jpg" alt="zion">
-
+        <button class="hideImg">Hide this Image</button>
         <img src="https://www.national-park-posters.com/wp-content/uploads/2015/11/olympic-national-park.jpg" alt="olympic">
+        <button class="hideImg">Hide this Image</button>
         <img src="https://www.national-park-posters.com/wp-content/uploads/2017/09/hawaii-volcanoes-national-park.jpg" alt="hawaii">
+        <button class="hideImg">Hide this Image</button>
         <img src="https://www.national-park-posters.com/wp-content/uploads/2015/06/biscayne-national-park-620x905.jpg" alt="biscayne">
-
+        <button class="hideImg">Hide this Image</button>
         <img src="https://www.national-park-posters.com/wp-content/uploads/2015/11/death-valley-national-park.jpg" alt="deathValley">
+        <button class="hideImg">Hide this Image</button>
         <img src="https://www.national-park-posters.com/wp-content/uploads/2016/06/crater-lake-national-park.jpg" alt="craterLake">
+        <button class="hideImg">Hide this Image</button>
         <img src="https://www.national-park-posters.com/wp-content/uploads/2014/11/yellowstone-national-park-620x905.jpg" alt="yellowstone">
+        <button class="hideImg">Hide this Image</button>
     </div>
 
     <script>
         //ACTIONS
         var count = 0;
-        
+
+        var imgsHTML = $($('.images').html());
+
         var clearPage = function(){
             $("img").remove();
             $("h1").remove();
@@ -50,18 +60,26 @@
         var prependMessage = function(){
             $('.images').prepend("<h1>The Beautiful National Parks of America</h1>");
             count = count + 1;
-            console.log(count);
-            // if (count%2 === 1) {
-            //     print("heyoooo");
-            // }
         }
         
         var bringEmBack = function(){
-            $('.images').appendTo('#body');
+            $('.images').html(imgsHTML);
+            $('.p').show();
         }
 
         var addAnImage = function(){
             $('.images').prepend("<img src='https://www.national-park-posters.com/wp-content/uploads/2014/11/acadia-national-park-1.jpg' alt='acadia'/>");
+        }
+
+        var hidePrevImg = function(event){
+            $(event.target).prev().toggle();
+            if ($(event.target).prev().css('display') === 'none') {
+                $(event.target).text("Show");
+            }
+            else {
+                $(event.target).text("Hide");
+            }
+            
         }
 
         //EVENTS
@@ -83,6 +101,10 @@
 
         $('#bringBack').click(function(){
             bringEmBack();
+        });
+
+        $('.hideImg').click(function(){
+            hidePrevImg(event);
         });
 
     </script>
