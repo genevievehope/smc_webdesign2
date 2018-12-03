@@ -16,3 +16,34 @@ body {
     margin: auto;
     background-color: pink;
 }
+
+h1 {
+    font-family: 'Libre Baskerville';
+}
+
+h2 {
+    font-family: 'Libre Baskerville';
+}
+
+p {
+    font-family: 'Libre Baskerville';
+}
+
+.blogPost {
+    margin: 20px;
+    display: inline;
+}
+
+.imgContainer {
+    height: 300px;
+    width: 100px;
+    background-color: orange;
+    display: inline-block;
+}
+
+.blurbContainer {
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    display: inline-block;
+}
