@@ -1,0 +1,27 @@
+.container {
+    width: 960px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    min-width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+
+.form-input {
+    min-width: 400px;
+}
+
+textarea {
+    margin-left: 100px;
+    display: block;
+    min-height: 200px;
+    min-width: 400px;
+}
