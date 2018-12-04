@@ -30,20 +30,20 @@ p {
 }
 
 .blogPost {
-    margin: 20px;
     display: inline;
+    margin: 2%;
 }
 
 .imgContainer {
     height: 300px;
-    width: 100px;
+    width: 45%;
     background-color: orange;
     display: inline-block;
 }
 
 .blurbContainer {
     height: 50px;
-    width: 100px;
+    width: 45%;
     background-color: red;
     display: inline-block;
 }
