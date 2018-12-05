@@ -54,13 +54,16 @@ p {
 .imgContainer {
     height: 470px;
     width: 470;
-    background-color: orange;
+    background-size: cover;
+    background-position: center;
     margin: auto;
+    /* background-image: url("https://static1.squarespace.com/static/5b5f4a70a9e028608eaf20cb/t/5b84bf2e898583173cc87acc/1535426418975/St+Margaret%27s+Center+facility+photo.jpg") */
 }
 
 .blurbContainer {
     height: 50px;
     width: 470;
-    background-color: red;
+    /* background-color: red; */
     margin: auto;
+    background-image: linear-gradient(blue, purple);
 }
