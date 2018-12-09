@@ -1,4 +1,2 @@
 /* Adding all things for fonts and text. */
-@import url("typography.css");
-/* Adding all things for page layout. */
-@import url("layout.css");
+@import url("styles.css");

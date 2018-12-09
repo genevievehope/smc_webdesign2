@@ -1,0 +1,265 @@
+nav {
+    width: 100%;
+    margin: auto;
+}
+
+li {
+    display: inline-block;
+    font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5%;
+    font-weight: bolder;
+    background-color: #ffcd58;
+    padding: 5px;
+}
+
+ul {
+    text-align: right;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Libre Baskerville';
+    display: inline;
+}
+
+h2 {
+    font-family: 'Libre Baskerville';
+}
+
+h3 {
+    margin-inline-start: inherit;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: black;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.text {
+    font-family: 'Montserrat';
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-half {
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.blogPost {
+    margin-bottom: 20px;
+    display: block;
+    width: 49%;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.blurbContainer {
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    background-color: #000000;
+    padding-top: 10px;
+    /* background-image: linear-gradient(#ffc400, #e25a00); */
+}
+
+a:link {        /* a normal, unvisited link */
+    color: #000000;
+    text-decoration: none;
+}              
+a:visited {     /* a link the user has visited */
+    color: #000000;
+    text-decoration: none;
+}          
+a:hover {       /* a link when the user mouses over it */
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ffcd58;
+}           
+a:active {      /* a link the moment it is clicked */
+    color: #ffcd58;
+    text-decoration: none;
+}     
+
+/* SLIDESHOW STYLES */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* END OF SLIDESHOW STYLES */
+
+.saint {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    main {
+        width: 80%;
+        max-width: 1500px;
+    }
+    
+    .column-half {
+        width: 50%;
+    }
+
+    .imgContainer {
+        height: 470px;
+        width: 470px;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+    }
+    
+    .blurbContainer {
+        height: 65px;
+        width: 470px;
+        margin: auto;
+        background-color: #ffcd58;
+        padding: 10px;
+        /* background-image: linear-gradient(#ffc400, #e25a00); */
+    }
+
+    h3 {
+        margin-left: 0px;
+    }
+
+    .blogPost {
+        display: inline-block;
+    }
+
+    .saint {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    nav {
+        width: 960px;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .slideshow-container {
+        width: 100%;
+        max-width: 1000px;
+    }
+}
