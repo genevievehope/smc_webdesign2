@@ -21,6 +21,7 @@ ul {
 main {
     width: 100%;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -48,6 +49,11 @@ p {
 
 .text {
     font-family: 'Montserrat';
+}
+
+form {
+    background-color: #ffcd58;
+    width: 45%;
 }
 
 .flex-row {
@@ -110,7 +116,7 @@ a:active {      /* a link the moment it is clicked */
 
 /* Slideshow container */
 .slideshow-container {
-  width: 90%;
+  width: 100%;
   position: relative;
   margin: auto;
   margin-top: 20px;
@@ -257,9 +263,4 @@ a:active {      /* a link the moment it is clicked */
 
 }
 
-@media only screen and (min-width: 1000px) {
-    .slideshow-container {
-        width: 100%;
-        max-width: 1000px;
-    }
-}
+@media only screen and (min-width: 1000px) {}
