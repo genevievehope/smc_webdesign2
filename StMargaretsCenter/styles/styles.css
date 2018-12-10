@@ -24,6 +24,13 @@ main {
     margin-bottom: 100px;
 }
 
+.cross {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    width: 40px;
+}
+
 h1 {
     font-family: 'Libre Baskerville';
     display: inline;
@@ -39,8 +46,6 @@ h3 {
     font-weight: bolder;
     color: black;
     display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 p {
@@ -53,12 +58,12 @@ p {
 
 form {
     background-color: #ffcd58;
-    width: 45%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
 }
 
-.flex-row {
-    display: flex;
-    justify-content: space-between;
+input {
+    width: 100%;
 }
 
 .column-half {
@@ -71,24 +76,22 @@ form {
 
 .blogPost {
     margin-bottom: 20px;
-    display: block;
-    width: 49%;
+    display: inline-block;
+    width: 100%;
 }
 
 .imgContainer {
     width: 100%;
-    height: 450px;
     background-size: cover;
     background-position: center;
     margin: auto;
 }
 
 .blurbContainer {
-    height: 50px;
+    height: 80px;
     width: 100%;
-    margin: auto;
-    background-color: #000000;
-    padding-top: 10px;
+    background-color: #ffcd58;
+    padding: 10px;
     /* background-image: linear-gradient(#ffc400, #e25a00); */
 }
 
@@ -216,51 +219,75 @@ a:active {      /* a link the moment it is clicked */
     display: block;
 }
 
+/* NAV BAR STUFF */
+
+
+.postPic {
+    width: 100%;
+}
+
+.column2-half {
+    width: 100%
+}
+
 @media only screen and (min-width: 600px) {
     main {
         width: 80%;
         max-width: 1500px;
     }
-    
+
+    nav {
+        width: 80%;
+        max-width: 1500px;
+    }
+
     .column-half {
-        width: 50%;
+        width: 48%;
+        float: left;
+    }
+
+    .column2-half {
+        width: 48%;
+        float: left;
+        margin-left: 4%
     }
 
     .imgContainer {
+        width: 100%;
         height: 470px;
-        width: 470px;
         background-size: cover;
         background-position: center;
         margin: auto;
     }
     
     .blurbContainer {
-        height: 65px;
-        width: 470px;
+        width: 100%;
         margin: auto;
         background-color: #ffcd58;
         padding: 10px;
         /* background-image: linear-gradient(#ffc400, #e25a00); */
     }
 
-    h3 {
-        margin-left: 0px;
+    .aboutBlock {
+        float: left;
+        width: 48%;
+    }
+    
+    .aboutText {
+        float: left;
+        width: 48%;
+        margin-left: 3%;
+        margin-top: -15px;
     }
 
-    .blogPost {
-        display: inline-block;
-    }
-
-    .saint {
-        width: 80%;
-        max-width: 300px;
-    }
-
-    nav {
-        width: 960px;
-        margin: auto;
+    .cross {
+        display: none;
     }
 
 }
 
-@media only screen and (min-width: 1000px) {}
+/* @media only screen and (min-width: 800px) {
+    .blurbContainer {
+        height: 100px;
+    }
+} */
