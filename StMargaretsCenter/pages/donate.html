@@ -24,7 +24,7 @@
         <h2>Donations</h2>
         
         <div class="aboutBlock">
-            <form action="/action_page.php">
+            <form action="/action_page.php" class="donationForm">
                 <table style="width:100%">
                     <tr>
                         <td>First Name: </td>
@@ -43,9 +43,124 @@
                         <td><input type="number" name="amount" placeholder="500"></td>
                     </tr>
                 </table><br>
-                <input type="submit" value="Submit"> 
+                <button id="submit">Submit</button>
             </form>
         </div>
+
+        <script>
+            // ACTIONS
+            var submitForm = function(){
+                $('form').remove();
+                $('.aboutBlock').append("<p class='thankYou'>Thank you for your donation!</p>");
+                $('.aboutBlock').append("<button id='again'>Make Another Donation</button>");
+            }
+
+            var createForm = function(){
+                $('.thankYou').remove();
+                $('.aboutBlock').append('donationForm');
+            }
+            // EVENTS
+            $('#submit').click(function(){
+                submitForm();
+            });
+
+            $('#again').click(function(){
+                createForm();
+            });
+        </script>
+
+        <!-- --------------------------------------------------------------------------------------------------- -->
+        <!-- <div class="button-container">
+            <button id="append">Append</button>
+            <button id="prepend">Prepend</button>
+    
+            <button id="appendTo">Append To</button>
+            <button id="prependTo">Prepend To</button>
+    
+            <button id="after">After</button>
+            <button id="before">Before</button>
+    
+            <button id="remove">Remove</button>
+        </div>
+        <div class="box box1 bordered">
+    
+        </div>
+    
+        <div class="box box2">
+    
+        </div>
+    
+        <script>
+            //ACTIONS
+            var appendAnElement = function(){
+                $('.box1').append("<h3>Hello World!</h3>");
+            }
+    
+            var prependAnElement = function(){
+                $('.box1').prepend("<h3>I'm prepended!</h3>");
+            }
+    
+            var appendToAnElement = function(){
+                $("<h3>This is appended</h3>").appendTo('.box2');
+            }
+    
+            var prependToAnElement = function(){
+                $("<h3>This is prepended</h3>").prependTo('.box2');
+            }
+    
+            var afterAnElement = function(){
+                $('.box').after("<h3>I come after.</h3>");
+            }
+    
+            var beforeAnElement = function(){
+                $('.box').before("<h3>I come before.</h3>");
+            }
+    
+            var removeThemAll = function(){
+                $('h3').remove();
+            }
+    
+            //EVENTS
+            $('#append').click(function(){
+                appendAnElement();
+            });
+    
+            $('#prepend').click(function(){
+                prependAnElement();
+            });
+    
+            $('#appendTo').click(function(){
+                appendToAnElement();
+            });
+    
+            $('#prependTo').click(function(){
+                prependToAnElement();
+            });
+    
+            $('#after').click(function(){
+                afterAnElement();
+            });
+    
+            $('#before').click(function(){
+                beforeAnElement();
+            });
+    
+            $('#remove').click(function(){
+                removeThemAll();
+            });
+    
+            // $('button').click(function(evnt){
+            //     var thisID = $(evnt.target).attr('id');
+    
+            //     var functionName = thisID+"AnElement";
+            //     functionName()
+            //     //thisID + AnElement();
+            // })
+        </script> -->
+        
+        <!-- --------------------------------------------------------------------------------------------------- -->
+
+
 
         <div class="aboutText">
             <p>Thank you for your interest and generosity! As a nonprofit, we survive on the donations of devoted Catholic parishes, families, and individuals. We accept money electronically in the form below, and through mailed checks. We also deeply appreciate giving of food and volunteer time. </p>
